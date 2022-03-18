@@ -1,0 +1,158 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    text-align: center;
+}
+
+header {
+    background-color: black;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header h4:hover {
+    color: rgb(183, 180, 180);
+    cursor: pointer;
+}
+
+header h4:active {
+    text-decoration: none;
+}
+
+#mission img {
+    height: 200px;
+    left: 30px;
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.nav { 
+    display: inline-flex;
+    margin-top: 0px;
+}
+
+.nav h4 {
+    padding: 0rem 1rem;
+    color: rgb(235, 232, 232);
+    text-decoration: underline;
+    font-size: 1.3rem;
+}
+
+#mission h2 {
+    margin-top: 6rem;
+    color: gray;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+#mission h4 {
+    font-weight: lighter;
+    font-size: 1.125rem;
+}
+
+#featured h2 {
+    margin-top: 6rem;
+    color: gray;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.feature-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.feature-item {
+    height: 400px;
+    width: 260px;
+    background-color: rgb(152, 149, 149);
+    border: 1px gray solid;
+    border-radius: 5px;
+    margin: 20px;
+    color: whitesmoke;
+    display: grid;
+}
+
+.feature-item h4 {
+    align-self: center;
+    justify-self: center;
+    font-size: 1.5rem;
+    margin: 0rem .5rem;
+    line-height: 2.25rem;
+}
+
+.feature-item:hover {
+    background-color: rgb(115, 112, 112);
+    cursor: pointer;
+}
+
+.feature-item:active {
+    background-color: rgb(72, 71, 71);
+}
+
+#about h4 {
+    font-weight: lighter;
+    font-size: 1.125rem;
+    margin: 0rem 4rem;
+    line-height: 2.5rem;
+    text-align: justify;
+}
+
+#about h2 {
+    margin-top: 6rem;
+    color: gray;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+footer {
+    margin-top: 6rem;
+    text-align: centre;
+    color: white;
+    background-color: rgb(43, 43, 43);
+    height: 100px;
+}
+
+footer p { 
+    padding-top: 2.5rem;
+}
+
+a {
+    color: blue;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 460px) {
+    .feature-item {
+        width: 400px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .feature-item {
+        width: 400px;
+    }
+    header h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 1.5rem; 
+    }
+    #mission h4 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
